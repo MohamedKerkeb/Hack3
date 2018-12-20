@@ -1,0 +1,11 @@
+.SignInForm {
+  display : flex;
+  flex-direction: column;
+  margin : auto;
+  width: 40vw;
+  height: auto;
+}
+.SignInLogo {
+  width: 10vw;
+  height: auto;
+}
