@@ -3,6 +3,7 @@ import { Link, Redirect } from 'react-router-dom';
 import { TextField, Button } from '@material-ui/core';
 import './SignIn.css';
 import Logo from '../LOGOOIKOS-min.png';
+import Main from './Main'
 
 class SignIn extends Component {
   state = {
@@ -15,6 +16,7 @@ updateInfo = event => {
       [event.target.name]: event.target.value
   });
 };
+
 
 
   render() {
@@ -49,7 +51,7 @@ updateInfo = event => {
               required
           />
 
-          <Button 
+          <Link to="/main"><Button 
               onClick={this.handleClick}
               type="submit" 
               value="Soumettre"
@@ -57,12 +59,9 @@ updateInfo = event => {
               color="default"
           >
               Submit
-          </Button>
+          </Button></Link>
 
         </form>
-        <p>
-          Lien temporaire vers <Link to="/index">Index</Link>
-        </p>
 
       </div>
     );
