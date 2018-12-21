@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 import { withStyles } from '@material-ui/core/styles';
 import './About.css'
 import Radio from '@material-ui/core/Radio';
+import { Link, Redirect } from 'react-router-dom';
 
 
 
@@ -150,6 +151,7 @@ class About extends Component {
             }}
         />
         </div>
+        <Link to="/main"><h1>SKIP</h1></Link>
       </div>
     )
   }
