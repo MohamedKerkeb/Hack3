@@ -3,7 +3,6 @@ import { Link, Redirect } from 'react-router-dom';
 import { TextField, Button } from '@material-ui/core';
 import './SignIn.css';
 import Logo from '../LOGOOIKOS-min.png';
-import Main from './Main'
 
 class SignIn extends Component {
   state = {
@@ -51,7 +50,7 @@ updateInfo = event => {
               required
           />
 
-          <Link to="/main"><Button 
+          <Link to="/about"><Button 
               onClick={this.handleClick}
               type="submit" 
               value="Soumettre"
