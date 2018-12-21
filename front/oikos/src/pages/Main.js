@@ -34,17 +34,36 @@ class Main extends Component {
                 </div>
             </div>
         </div>
-        <div class="list">
+        <div classNames="list">
         <h3>CHECKLIST / BILAN</h3>
-            <label><input class="item" type="checkbox" checked/><span>Canon G7X</span></label>
-            <label><input class="item" type="checkbox"/><span>Canon 70D</span></label>
-            <label><input class="item" type="checkbox"/><span>GoPro Hero 3</span></label>
-            <label><input class="item" type="checkbox" checked/><span>Macbook Pro 13" i7 16G</span></label>
-            <label><input class="item" type="checkbox"/><span>Rode GoMic Pro</span></label>
-            <label><input class="item" type="checkbox" checked/><span>SDXC 32G 300MB/s</span></label>
-            <label><input class="item" type="checkbox"/><span>External Hard Disk 2TB HDD</span></label>
-            <label><input class="item" type="checkbox"/><span>Joby Gorillapod</span></label>
-            <label><input class="item" type="checkbox"/><span>Coffe</span></label>
+            <label><input className="item" type="checkbox" /><span>J’ai privilégié la vente/achat d’occasion ou le reconditionné plutôt qu’un appareil neuf</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai choisi un appareil porteur d’un logo environnemental</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai débranché mes appareils laissés allumés/en veille</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai coupé l’alimentation de ma box TV/Internet</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai limité le nombre de programmes ou d’onglets ouverts et inutilisés sur mon appareil</span></label>
+            <label><input className="item" type="checkbox" /><span>J’ai désactivé les fonctions GPS, Wi-fi, bluetooth de mon téléphone ou de ma tablette quand je n’utilisais pas ces fonctionnalités</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai désactivé le Wi-fi de ma box lorsque je n’en avais pas l’utilité</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai réglé mon ordinateur et mon smartphone en mode « économie d’énergie » quand c’était possible</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai branché mes équipements (ordinateur, imprimante, box) sur une multiprise à interrupteur pour l’éteindre plus régulièrement</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai limité l’usage du cloud au strict nécessaire pour favoriser un stockage en local</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai recyclé mon vieil appareil
+</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai limité le nombre de destinataires de mes mails au strict nécessaire
+</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai nettoyé ma liste de diffusion email
+</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai optimisé la taille des pièces jointes de mon email : compression de fichiers, images en basse définition 
+</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai trouvé des alternatives aux sites de transfert de fichiers lourds : clé USB par exemple
+</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai supprimé les pièces jointes d’un message auquel je répondais
+</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai utilisé des mots-clés précis sur mon moteur de recherche pour limiter la sollicitation des serveurs
+</span></label>
+            <label><input className="item" type="checkbox"/><span>J’ai supprimé le cache et l’historique de mes recherches
+</span></label>
+            
+
         </div>
       </div>
     );
