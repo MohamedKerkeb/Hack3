@@ -9,4 +9,18 @@
   width: 10vw;
   height: auto;
 }
-
+.SignInWithF {
+  width: auto;
+  height: 5vw;
+  margin-right: 1vw;
+}
+.SignInWithG {
+  width: auto;
+  height: 5vw;
+  margin-left: 1vw;
+}
+.SignIn{
+  border-radius: 45;
+  background-color: #59A1E4;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
