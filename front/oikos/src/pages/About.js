@@ -36,7 +36,7 @@ class About extends Component {
 
   }
 
-  handleChange = () => {
+  handleClik = () => {
     this.setState({ 
         checkedA: !this.state.checkedA,
         checkedB: !this.state.checkedB,
@@ -68,11 +68,11 @@ class About extends Component {
             <h2 className="titre2">GENDER</h2>
             Woman<Checkbox 
             checked={this.state.checkedA}
-            onClick={this.handleChange}
+            onClick={this.handleClik}
             />
             Man<Checkbox
             checked={this.state.checkedB}
-            onClick={this.handleChange}
+            onClick={this.handleClik}
             color="primary"
             />
         </div>
