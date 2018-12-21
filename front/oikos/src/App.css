@@ -1,14 +1,6 @@
-<<<<<<< HEAD
 .App {
   text-align: center;
-=======
-* {
-}
-
-.App {
-  text-align: center;
-  //background-color: black;
->>>>>>> b2147b5458adeb72e99f8759b98df02c09d8b1a2
+  /* background-color: black; */
 }
 
 .App-logo {

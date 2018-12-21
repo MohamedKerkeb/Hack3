@@ -1,35 +1,48 @@
-import React, { Component } from 'react';
-<<<<<<< HEAD
-import logo from './logo.svg';
-import './App.css';
-=======
-import './App.css';
-import Router from './routes/Router';
-
->>>>>>> b2147b5458adeb72e99f8759b98df02c09d8b1a2
+import "./App.css";
+import Router from "./routes/Router";
+import React, { Component } from "react";
+import axios from "axios";
+import "./App.css";
+import Item from "./component/Items";
 
 class App extends Component {
+  state = {
+    post: [],
+    question: [],
+    IsLoad: false
+  };
+
+  componentDidMount() {
+    //const link = `http://163.172.139.224/wp-json/wp/v2/posts/`;
+    const link = `http://localhost:3001/`;
+    axios
+      .get(link)
+      .then(res => {
+        console.log(res.data);
+        this.setState({ question: res.data, IsLoad: true });
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  }
+
   render() {
+    const { question, IsLoad } = this.state;
     return (
       <div className="App">
-<<<<<<< HEAD
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-=======
         <Router />
->>>>>>> b2147b5458adeb72e99f8759b98df02c09d8b1a2
+
+        <h1>oikos</h1>
+        {/* {post.map(e => (
+          <div key={e.id}>
+            <h2>{e.title.rendered}</h2>
+            <div
+              className="content"
+              dangerouslySetInnerHTML={{ __html: e.excerpt.rendered }}
+            />
+          </div>
+        ))} */}
+        {IsLoad && <Item post={question} />}
       </div>
     );
   }
