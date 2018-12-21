@@ -3,3 +3,14 @@ page_about
     display: flex;
     grid: row;
 }
+
+.titre2
+{
+    margin-left: 0%;
+}
+
+.bloc2, .bloc1, .bloc3, .bloc4
+{
+    margin-top: 70px;
+}
+

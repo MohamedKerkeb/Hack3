@@ -64,49 +64,54 @@ class About extends Component {
     return (
       <div className="page_about">
           <h1>ABOUT YOU</h1>
-          <h2>GENDER</h2>
-       Woman<Checkbox 
-          checked={this.state.checkedA}
-          onClick={this.handleChange}
-        />
-        Man<Checkbox
-          checked={this.state.checkedB}
-          onClick={this.handleChange}
-          color="primary"
-        />
-        <FormControl className={classes.formControl} variant="outlined">
-          <InputLabel
-            ref={ref => {
-              this.labelRef = ReactDOM.findDOMNode(ref);
-            }}
-            htmlFor="component-outlined"
-          >
-            Age
-          </InputLabel>
-          <OutlinedInput
-            id="component-outlined"
-            value={this.state.name}
-            onChange={this.handleChange}
-            labelWidth={this.labelRef ? this.labelRef.offsetWidth : 0}
-          />
-        </FormControl>
-        <FormControl className={classes.formControl} variant="outlined">
-          <InputLabel
-            ref={ref => {
-              this.labelRef = ReactDOM.findDOMNode(ref);
-            }}
-            htmlFor="component-outlined"
-          >
-            City
-          </InputLabel>
-          <OutlinedInput
-            id="component-outlined"
-            value={this.state.name}
-            onChange={this.handleChange}
-            labelWidth={this.labelRef ? this.labelRef.offsetWidth : 0}
-          />
+          <div className="bloc1">
+            <h2 className="titre2">GENDER</h2>
+            Woman<Checkbox 
+            checked={this.state.checkedA}
+            onClick={this.handleChange}
+            />
+            Man<Checkbox
+            checked={this.state.checkedB}
+            onClick={this.handleChange}
+            color="primary"
+            />
+        </div>
+        <div className="bloc2">
+            <FormControl className={classes.formControl} variant="outlined">
+            <InputLabel
+                ref={ref => {
+                this.labelRef = ReactDOM.findDOMNode(ref);
+                }}
+                htmlFor="component-outlined"
+            >
+                Age
+            </InputLabel>
+            <OutlinedInput
+                id="component-outlined"
+                value={this.state.name}
+                onChange={this.handleChange}
+                labelWidth={this.labelRef ? this.labelRef.offsetWidth : 0}
+            />
             </FormControl>
-            <h2>STATUS</h2>
+            <FormControl className={classes.formControl} variant="outlined">
+            <InputLabel
+                ref={ref => {
+                this.labelRef = ReactDOM.findDOMNode(ref);
+                }}
+                htmlFor="component-outlined"
+            >
+                City
+            </InputLabel>
+            <OutlinedInput
+                id="component-outlined"
+                value={this.state.name}
+                onChange={this.handleChange}
+                labelWidth={this.labelRef ? this.labelRef.offsetWidth : 0}
+            />
+            </FormControl>
+        </div>
+        <div className="bloc3">
+            <h2 className="titre2">STATUS</h2>
             Married<Checkbox
             checked={this.state.checkedC}
             onClick={this.handleClick}
@@ -116,7 +121,9 @@ class About extends Component {
             onClick={this.handleClick}
             color="primary"
             />
-            <h2>SKIP</h2>
+        </div>
+        <div className="bloc4">
+            <h2 className="titre2">SKIP</h2>
             <Radio
             checked={this.state.checkedE === false}
             onClick={this.handleClicke}
@@ -125,7 +132,7 @@ class About extends Component {
             aria-label="E"
             />
             <Radio
-            checked={this.state.checkedF === true}
+            // checked={this.state.checkedF === true}
             onClick={this.handleClicke}
             value="F"
             name="radio-button-demo"
@@ -142,6 +149,7 @@ class About extends Component {
                 checked: classes.checked,
             }}
         />
+        </div>
       </div>
     )
   }
