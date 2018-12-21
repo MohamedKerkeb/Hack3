@@ -32,7 +32,7 @@ class App extends Component {
       <div className="App">
         <Router />
 
-        <h1>oikos</h1>
+        
         {/* {post.map(e => (
           <div key={e.id}>
             <h2>{e.title.rendered}</h2>

@@ -3,6 +3,11 @@ import { Link, Redirect } from 'react-router-dom';
 import { TextField, Button } from '@material-ui/core';
 import './SignIn.css';
 import Logo from '../LOGOOIKOS-min.png';
+import Logo from '../images/LOGOOIKOS-min.png';
+import fb from '../images/F.svg';
+import google from '../images/G.svg';
+import Main from './Main'
+
 
 class SignIn extends Component {
   state = {
@@ -24,14 +29,12 @@ updateInfo = event => {
 
     return (
       <div>
-        <h1>SIGN IN</h1>
-
-        <img src={Logo} alt="Logo Oikos" className="SignInLogo"/>
-
-        <form onSubmit={this.handleSubmit} className="SignInForm">
+        <p>
+          <img src={Logo} alt="Logo Oikos" className="SignInLogo"/>
+        </p>
+        <form onSubmit={this.handleSubmit} className="SignInForm" method="POST">
 
           <TextField
-              required
               id="standard-required"
               label="Votre email"
               type="email" 
@@ -47,8 +50,7 @@ updateInfo = event => {
               name="password" 
               onChange={this.updateInfo} 
               value={password}
-              required
-          />
+            />
 
           <Link to="/about"><Button 
               onClick={this.handleClick}
@@ -56,11 +58,17 @@ updateInfo = event => {
               value="Soumettre"
               variant="contained" 
               color="default"
+              className="SignIn"
           >
-              Submit
+              Sign In
           </Button></Link>
 
         </form>
+
+        <p>
+          <img src={google} alt="Sign in with Google" className="SignInWithF"/>
+          <img src={fb} alt="Sign in with Facebock" className="SignInWithG"/>
+        </p>
 
       </div>
     );
