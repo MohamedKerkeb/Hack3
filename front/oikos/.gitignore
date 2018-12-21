@@ -22,6 +22,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b2147b5458adeb72e99f8759b98df02c09d8b1a2
 # Created by https://www.gitignore.io/api/macos,linux,windows,sublimetext,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=macos,linux,windows,sublimetext,visualstudiocode
 
