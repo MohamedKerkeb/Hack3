@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { TextField, Button } from '@material-ui/core';
 import './SignIn.css';
+import Logo from '../LOGOOIKOS-min.png';
 import Logo from '../images/LOGOOIKOS-min.png';
 import fb from '../images/F.svg';
 import google from '../images/G.svg';
-
 import Main from './Main'
+
 
 class SignIn extends Component {
   state = {
@@ -51,7 +52,7 @@ updateInfo = event => {
               value={password}
             />
 
-          <Link to="/main"><Button 
+          <Link to="/about"><Button 
               onClick={this.handleClick}
               type="submit" 
               value="Soumettre"

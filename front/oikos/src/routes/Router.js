@@ -7,7 +7,7 @@ import Quizz from '../pages/Quizz';
 import Wiki from '../pages/Wiki';
 import Ranking from '../pages/Ranking';
 import Points from '../pages/Points';
-
+import About from '../pages/About';
 
 class Router extends Component {
 
@@ -17,6 +17,7 @@ class Router extends Component {
 
           <Switch>
             <Route exact path='/' component={SignIn} />
+            <Route exact path='/about' component={About} />
             <Route exact path='/main' component={Main} />
             <Route path='/quizz' component={Quizz} />
             <Route path='/wiki' component={Wiki} />
