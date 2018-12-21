@@ -4,7 +4,7 @@ import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Main from '../pages/Main';
 import SignIn from '../pages/SignIn';
 import Quizz from '../pages/Quizz';
-import Wiki from '../pages/Wiki';
+import Wiki from '../pages/PrimarySearchBar';
 import Ranking from '../pages/Ranking';
 import Points from '../pages/Points';
 import About from '../pages/About';
